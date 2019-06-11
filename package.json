@@ -1,7 +1,7 @@
 {
-  "name": "vue-webpack-4",
-  "version": "1.1.0",
-  "description": "A Vuejs template using Webpack 4",
+  "name": "vue-lerna-webpack4-temp",
+  "version": "0.0.1",
+  "description": "A Vuejs template using Webpack 4 and lerna",
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -18,7 +18,7 @@
   "workspaces": [
     "modules/*"
   ],
-  "author": "Daniel Cook",
+  "author": "tracert_it",
   "license": "MIT",
   "dependencies": {
     "vue": "^2.6.10",

@@ -1,5 +1,7 @@
 # vue-webpack4-template
-VueJs template using Webpack 4
+VueJs template using Webpack 4 and lerna
+
+by: https://github.com/dfcook/vue-webpack4-template
 
 This repository is an implementation of the 'Vue.js and Webpack 4 From Scratch' article series on [itnext.io](https://itnext.io).
 
