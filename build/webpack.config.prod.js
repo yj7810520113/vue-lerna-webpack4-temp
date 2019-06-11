@@ -2,7 +2,7 @@
 
 const merge = require('webpack-merge')
 const baseConfig = require('./webpack.config.base')
-const MiniCssExtractPlugin  = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = merge(baseConfig, {
   mode: 'production',
@@ -22,14 +22,14 @@ module.exports = merge(baseConfig, {
       {
         test: /\.css?$/,
         use: [
-          MiniCssExtractPlugin.loader, 
+          MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       }, {
         test: /\.styl(us)?$/,
         use: [
-          MiniCssExtractPlugin.loader, 
-          'css-loader', 
+          MiniCssExtractPlugin.loader,
+          'css-loader',
           'stylus-loader'
         ]
       }

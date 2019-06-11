@@ -5,12 +5,19 @@
 </template>
 
 <script>
+import { add } from '@mc.gl/mytest'
+import { add1 } from '@mc.gl/test-connect'
 export default {
   props: {
     name: {
       type: String,
       required: true
     }
+  },
+  created() {
+    console.log(add)
+    console.log(add(1, 2))
+    console.log(add1(5, 2))
   }
 }
 </script>
