@@ -12,7 +12,8 @@
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test:unit": "jest --config test/jest.config.js",
     "test": "npm run lint && npm run test:unit",
-    "test:debug": "node --inspect node_modules/.bin/jest --runInBand --config test/jest.config.js"
+    "test:debug": "node --inspect node_modules/.bin/jest --runInBand --config test/jest.config.js",
+    "commit": "git-cz"
   },
   "private": true,
   "workspaces": [

@@ -12,5 +12,6 @@
     "build-es5": "cross-env BABEL_ENV=es5 babel src --out-dir dist/es5 --source-maps --ignore 'node_modules/'",
     "build": "npm run build-es6  && npm run build-esm && npm run build-es5"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "57515289668ec8f6c3555b4ae350fb4cea57d9fa"
 }
