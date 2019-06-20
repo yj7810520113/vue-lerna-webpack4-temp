@@ -12,10 +12,10 @@
     "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm --source-maps --ignore 'node_modules/'",
     "build-es5": "cross-env BABEL_ENV=es5 babel src --out-dir dist/es5 --source-maps --ignore 'node_modules/'",
     "build": "npm run build-es6  && npm run build-esm && npm run build-es5",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build-es6  && npm run build-esm && npm run build-es5"
   },
   "license": "MIT",
-  "gitHead": "57515289668ec8f6c3555b4ae350fb4cea57d9fa",
+  "gitHead": "3a3061db2926f707de1c2ab4ed98e148568e434b",
   "dependencies": {
     "deep-clone": "^3.0.3"
   }
