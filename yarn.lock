@@ -3831,6 +3831,10 @@ dedent@0.7.0, dedent@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
 
+deep-clone@^3.0.3:
+  version "3.0.3"
+  resolved "http://r.cnpmjs.org/deep-clone/download/deep-clone-3.0.3.tgz#c13d7797625b66e955c5f6f52bfad028eb1166bb"
+
 deep-equal@^1.0.1:
   version "1.0.1"
   resolved "http://r.cnpmjs.org/deep-equal/download/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"

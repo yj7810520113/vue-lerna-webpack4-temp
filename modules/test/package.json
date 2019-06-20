@@ -6,6 +6,7 @@
   "module": "dist/esm/index.js",
   "esnext": "dist/es6/index.js",
   "scripts": {
+    "dev": "npx babel src --out-dir dist",
     "prod": "webpack --config ../../build/webpack.config.prod.js",
     "build-es6": "cross-env BABEL_ENV=es6 babel src --out-dir dist/es6 --source-maps --ignore 'node_modules/'",
     "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm --source-maps --ignore 'node_modules/'",

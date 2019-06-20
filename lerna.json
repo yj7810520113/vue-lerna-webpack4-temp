@@ -14,6 +14,7 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "packages": [
-    "modules/*"
+    "modules/*",
+    "src/*"
   ]
 }
