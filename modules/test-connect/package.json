@@ -1,6 +1,6 @@
 {
   "name": "@mc.gl/test-connect",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "test",
   "main": "dist/es5/index.js",
   "module": "dist/esm/index.js",
