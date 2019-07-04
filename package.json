@@ -8,13 +8,14 @@
     "lib": "lerna run build --since master",
     "dev": "webpack-dev-server --progress --config build/webpack.config.dev.js",
     "prod": "webpack --config build/webpack.config.prod.js",
-    "publish": "lerna publish --conventional-commits --no-git-reset  --skip-npm",
+    "publish": "lerna publish --no-git-reset  --skip-npm",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test:unit": "jest --config test/jest.config.js",
     "test": "npm run lint && npm run test:unit",
     "test:debug": "node --inspect node_modules/.bin/jest --runInBand --config test/jest.config.js",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
   },
   "private": true,
   "workspaces": [
