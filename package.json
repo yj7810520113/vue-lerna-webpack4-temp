@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "lib": "lerna run build --since master",
+    "lib": "lerna run build --since",
     "dev": "webpack-dev-server --progress --config build/webpack.config.dev.js",
     "prod": "webpack --config build/webpack.config.prod.js",
     "publish": "npm run lib && lerna publish --skip-npm --no-git-reset",
