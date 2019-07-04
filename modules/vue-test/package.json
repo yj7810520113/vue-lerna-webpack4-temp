@@ -1,0 +1,24 @@
+{
+  "name": "@mc.gl/vue-test",
+  "version": "0.0.1",
+  "description": "vue-test",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "npx babel src --out-dir dist",
+    "prod": "webpack --config ../../build/webpack.config.prod.js",
+    "build-es6": "cross-env BABEL_ENV=es6 babel src --out-dir dist/es6 --source-maps --ignore 'node_modules/'",
+    "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm --source-maps --ignore 'node_modules/'",
+    "build-es5": "cross-env BABEL_ENV=es5 babel src --out-dir dist/es5 --source-maps --ignore 'node_modules/'",
+    "build": "webpack --config build/webpack.config.prod.js"
+  },
+  "license": "MIT",
+  "gitHead": "aef7c0848cdb83ad9d2e3421adbfceeaeff1bd68",
+  "dependencies": {
+    "@probe.gl/bench": "^3.0.3",
+    "deep-clone": "^3.0.3",
+    "probe.gl": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-vue-libs": "^3.0.0"
+  }
+}
