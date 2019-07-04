@@ -1,6 +1,6 @@
 {
   "name": "@mc.gl/vue-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue-test",
   "main": "dist/index.js",
   "scripts": {
