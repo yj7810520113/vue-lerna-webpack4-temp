@@ -16,6 +16,11 @@
   "license": "MIT",
   "gitHead": "aef7c0848cdb83ad9d2e3421adbfceeaeff1bd68",
   "dependencies": {
-    "deep-clone": "^3.0.3"
+    "@probe.gl/bench": "^3.0.3",
+    "deep-clone": "^3.0.3",
+    "probe.gl": "^3.0.3"
+  },
+  "devDependencies": {
+    "eslint-plugin-vue-libs": "^3.0.0"
   }
 }

@@ -1,5 +1,4 @@
 {
-  "lerna": "3.0.0",
   "version": "independent",
   "command": {
     "publish": {
@@ -14,7 +13,6 @@
   "npmClient": "yarn",
   "useWorkspaces": true,
   "packages": [
-    "modules/*",
-    "src/*"
+    "modules/*"
   ]
 }
