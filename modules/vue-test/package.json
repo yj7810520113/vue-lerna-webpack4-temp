@@ -9,7 +9,7 @@
     "build-es6": "cross-env BABEL_ENV=es6 babel src --out-dir dist/es6 --source-maps --ignore 'node_modules/'",
     "build-esm": "cross-env BABEL_ENV=esm babel src --out-dir dist/esm --source-maps --ignore 'node_modules/'",
     "build-es5": "cross-env BABEL_ENV=es5 babel src --out-dir dist/es5 --source-maps --ignore 'node_modules/'",
-    "build": "webpack --config build/webpack.config.prod.js"
+    "build": "webpack --config ./webpack.config.prod.js"
   },
   "license": "MIT",
   "gitHead": "54f138631bd43c7176e8b319ab1da16e9b4efd92",

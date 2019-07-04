@@ -3,9 +3,36 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
-const utils = require('./utils')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const utils={
+  resolve: function (dir) {
+    return path.join(__dirname, '..', dir)
+  },
 
+  assetsPath: function (_path) {
+    const assetsSubDirectory = 'static'
+    return path.posix.join(assetsSubDirectory, _path)
+  }
+}
 module.exports = {
+  mode: 'production',
+  entry: './src/index.js',    // 入口文件
+  output: {
+      filename: 'index.js',      // 打包后的文件名称
+      libraryTarget: "umd",
+      path: path.resolve('dist')  // 打包后的目录，必须是绝对路径
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendor",
+          chunks: "all",
+        },
+      },
+    },
+  },
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
@@ -16,12 +43,6 @@ module.exports = {
       'static': utils.resolve('static'),
       'components': utils.resolve('src/components')
     }
-  },
-  entry: './src/index.js',    // 入口文件
-  output: {
-      filename: 'index.js',      // 打包后的文件名称
-      libraryTarget: "umd",
-      path: path.resolve('dist')  // 打包后的目录，必须是绝对路径
   },
   externals:{
     'vue':'vue'
@@ -68,11 +89,28 @@ module.exports = {
             name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
           }
         }
+      },
+      {
+        test: /\.css?$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader'
+        ]
+      }, {
+        test: /\.styl(us)?$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'stylus-loader'
+        ]
       }
     ]
   },
 
   plugins: [
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MiniCssExtractPlugin({
+      filename: 'main.css'
+    })
   ]
 }
