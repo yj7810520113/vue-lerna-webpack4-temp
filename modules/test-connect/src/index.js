@@ -8,7 +8,7 @@ window.Probe = Probe
 // }
 let objectAssign = require('deep-clone')
 export function add1(a, b) {
-  console.log(add(2, 2))
+  console.log(add(123, 2))
   return add(a, b)
 }
 export function objectAssignFun(o) {
