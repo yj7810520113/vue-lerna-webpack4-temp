@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/yj7810520113/vue-lerna-webpack4-temp/compare/@mc.gl/vue-test@0.1.2...@mc.gl/vue-test@0.1.3) (2019-07-04)
+
+**Note:** Version bump only for package @mc.gl/vue-test
+
+
+
+
+
 ## [0.1.2](https://github.com/yj7810520113/vue-lerna-webpack4-temp/compare/@mc.gl/vue-test@0.1.1...@mc.gl/vue-test@0.1.2) (2019-07-04)
 
 **Note:** Version bump only for package @mc.gl/vue-test
