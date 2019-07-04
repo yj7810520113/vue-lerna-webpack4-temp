@@ -12,7 +12,7 @@
     "build": "webpack --config build/webpack.config.prod.js"
   },
   "license": "MIT",
-  "gitHead": "aef7c0848cdb83ad9d2e3421adbfceeaeff1bd68",
+  "gitHead": "54f138631bd43c7176e8b319ab1da16e9b4efd92",
   "dependencies": {
     "@probe.gl/bench": "^3.0.3",
     "deep-clone": "^3.0.3",
